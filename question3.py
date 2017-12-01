@@ -56,8 +56,17 @@ def question3(G):
 # vertices included in the MST. If a value min_span_tree[v] is true,
 # then vertex v is included in MST, otherwise not.
 
-print question3({'A': [('B', 3), ('E', 1)],
-                 'B': [('A', 3), ('C', 9), ('D', 2), ('E', 2)],
-                 'C': [('B', 9), ('D', 3), ('E', 7)],
-                 'D': [('B', 2), ('C', 3)],
-                 'E': [('A', 1), ('B', 2), ('C', 7)]})
+print question3({'A': [('B', 1), ('E', 3)],
+                 'B': [('A', 9), ('C', 1), ('D', 4), ('E', 4)],
+                 'C': [('B', 3), ('D', 7), ('E', 3)],
+                 'D': [('B', 3), ('C', 1)],
+                 'E': [('A', 2), ('B', 5), ('C', 6)]})
+
+print question3({'A': [('B', 2)],
+ 'B': [('A', 2), ('C', 5)],
+ 'C': [('B', 5)]})
+
+print question3({'A': []})
+
+print question3({})
+
