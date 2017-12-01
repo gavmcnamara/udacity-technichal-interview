@@ -46,7 +46,8 @@ def question3(G):
         min_span_tree[min_edge[1]] = [(min_edge[0], min_weight)]
     return min_span_tree
 
-# Efficiency: O(n*m) due to the fact of edges and vertices are each visited once in the while loop.
+# Efficiency: O(n*m) due to the fact of edges and
+# vertices are each visited once in the while loop.
 
 # Code design: I chose Prim's algorithm which at each step will
 # choose the cheapest route to the next step. In this case,
