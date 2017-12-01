@@ -109,21 +109,11 @@ print question4([[0]],
                 0,
                 0)
 
-print question4([[0, 0, 0, 0, 0, 0, 0],
-                 [0, 0, 1, 0, 1, 0, 0],
-                 [1, 0, 0, 0, 0, 1, 0],
-                 [0, 0, 0, 0, 0, 0, 0],
-                 [0, 0, 0, 0, 0, 0, 0],
-                 [0, 0, 0, 1, 0, 0, 1],
-                 [0, 0, 0, 0, 0, 0, 0]],
-                1,
-                0,
-                6)
 
 print question4([],
                 None,
                 None,
                 None)
 
-# Time complexity: The solution goes through the ancestors of n1 and n2
+# Efficency: The solution goes through the ancestors of n1 and n2
 # and takes the LCA from that list so the time complexity will be O(n)
