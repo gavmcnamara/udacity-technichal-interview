@@ -5,15 +5,14 @@
 # like: question1(s, t) and return a boolean True or False.
 
 # Takes in 2 aruements and checks if they are anagrams
+
 def isAnagram(str1, str2):
     str1_list = sorted(str1)
     str2_list = sorted(str2)
-# Compares and returns the sorted lists
-    return (str1_list == str2_list)
+    return (str1_list==str2_list)
 
-# iterates to see if t is a substring of s
 def question1(s, t):
-    for i in range(len(s) - len(t) + 1):
+    for i in range(len(s)-len(t)+1):
         if isAnagram(s[i: i+len(t)], t):
             return True
     return False
@@ -23,6 +22,7 @@ print question1("udacity", "citys")
 print question1("udacity", "ducaity")
 print question1("udacity", "ciy")
 print question1("udacity", " ")
+
 
 # Efficiency: O(n)
 
